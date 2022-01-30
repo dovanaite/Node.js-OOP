@@ -26,6 +26,8 @@ console.log(braske);
 console.log(greituolis);
 console.log(aukse);
 
+console.log('VOICES:');
+
 rainis.voice();
 rexas.voice();
 krimsnius.voice();
@@ -38,6 +40,7 @@ nemo.voice();
 
 
 console.log('PRISISTATYMAI:');
+
 rainis.introduce();
 rexas.introduce();
 krimsnius.introduce();
