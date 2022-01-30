@@ -1,20 +1,39 @@
-const Cat = require("./js/Cat.js");
-const Dog = require("./js/Dog.js");
-const Hamster = require("./js/Hamster.js");
+const Cat = require("./js/Animals/Pets/Cat.js");
+const Dog = require("./js/Animals/Pets/Dog.js");
+const Hamster = require("./js/Animals/Pets/Hamster.js");
+const Chicken = require("./js/Animals/Birds/Chicken.js");
+const Parrot = require("./js/Animals/Birds/Parrot.js");
+const Eagle = require("./js/Animals/Birds/Eagle.js");
+const Dragonfly = require("./js/Animals/Birds/Dragonfly.js");
 
-const rainis = new Cat('Rainis', 'rainis');
-const garfildas = new Cat('Garfildas', 'oranzinis');
-const freja = new Cat('Freja', 'ruda');
+const rainis = new Cat('Rainis', 'rainos');
+const rexas = new Dog('Rexas');
+const krimsnius = new Hamster('Krimsnius', 'rudos');
+const kudle = new Chicken('Kudlė', 'baltos');
+const braske = new Parrot('Braškė');
+const skraidunas = new Eagle('Skraidūnas');
+const greituolis = new Dragonfly('Greituolis');
+
+
 console.log(rainis);
-console.log(garfildas);
-console.log(freja);
+console.log(rexas);
+console.log(krimsnius);
+console.log(braske);
+console.log(greituolis);
+
 rainis.voice();
-const rex = new Dog('Rex');
-const brisius = new Dog('Brisius', 'rudas');
+rexas.voice();
+krimsnius.voice();
+kudle.voice();
+braske.voice();
+skraidunas.voice();
+greituolis.voice();
 
-rex.voice();
-brisius.voice();
-freja.voice();
 
-const chamiakas = new Hamster('Chamiakas', 'raudonas');
-chamiakas.voice();
+console.log('PRISISTATYMAI:');
+rainis.introduce();
+rexas.introduce();
+krimsnius.introduce();
+kudle.introduce();
+braske.introduce();
+skraidunas.introduce();
