@@ -1,8 +1,8 @@
 const Pets = require("./Pets.js")
 
 class Cat extends Pets {
-    constructor(name, color, breed, sound) {
-        super(name, color, breed, sound);
+    constructor(name, color) {
+        super(name, color);
         this.breed = "naminis katinas";
         this.sound = "'miau miau!'"
     }
